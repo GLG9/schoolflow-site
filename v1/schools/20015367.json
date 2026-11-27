@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "schoolNumber": "20015367",
+  "updatedAt": "2026-11-26T11:06:18Z",
+  "features": {
+    "substitutions": true,
+    "search": true,
+    "grades": { "provider": "fuxnoten", "portalId": "100308" }
+  }
+}
