@@ -46,12 +46,13 @@
   <p>Dafür speichern wir:</p>
   <ul>
     <li>ein zufälliges Gerätekennzeichen von Apple (Push-Token), aus dem wir weder Sie noch Ihr Gerät ermitteln können,</li>
-    <li>Schulnummer, Klasse und die gewählten Kurse,</li>
-    <li>Sprache, Ruhezeiten und Mitteilungseinstellungen,</li>
+    <li>eine zufällige Profilkennung der App, die Rolle (Schüler, Lehrkraft oder Eltern), Schulnummer, Klasse und die gewählten Kurse (Kurskürzel mit Lehrkraftkürzel),</li>
+    <li>Sprache, Ruhezeiten und ob die Mitteilung Details zeigen soll,</li>
     <li>den Zeitpunkt der letzten Anmeldung.</li>
   </ul>
+  <p>Profilnamen, die Sie in der App vergeben, verlassen Ihr Gerät nicht. Um Änderungen zu erkennen, speichert der Server außerdem den zuletzt veröffentlichten Tagesplan der Schule und noch nicht zugestellte Änderungen. Beides löschen wir spätestens am Folgetag.</p>
   <p>Ihr Passwort wird dabei nicht übertragen. Die App sendet nur einen daraus berechneten Nachweis, dass Sie Zugang zu Ihrer Schule haben. Die Zugangsdaten der Schule für den Planabruf liegen ausschließlich auf unserem Server. IP-Adressen speichern wir nicht. Der Server ist über Tailscale Funnel (Tailscale Inc., USA) erreichbar. Tailscale leitet die verschlüsselte Verbindung weiter und kann dabei technisch bedingt Ihre IP-Adresse sehen, nicht aber den Inhalt.</p>
-  <p>Die Mitteilung selbst stellt Apple zu (Apple Inc., USA, bzw. Apple Distribution International, Irland). Sie enthält die geänderte Stunde, zum Beispiel Fach, Raum oder Vertretung.</p>
+  <p>Die Mitteilung selbst stellt Apple zu (Apple Inc., USA, bzw. Apple Distribution International, Irland). Standardmäßig nennt sie nur, wie viele Änderungen es an welchem Tag gibt. Wenn Sie in der App die ausführliche Vorschau einschalten, enthält sie auch Stunde und Fach.</p>
   <p>Rechtsgrundlage ist Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO), die Sie mit dem Erlauben der Mitteilungen erteilen. Sie können sie jederzeit widerrufen, indem Sie Mitteilungen in der App oder in den iOS-Einstellungen ausschalten oder das Profil entfernen. Dann löschen wir die Registrierung. Geräte, die sich 60 Tage lang nicht gemeldet haben, löschen wir automatisch.</p>
 
   <h2>6. TestFlight</h2>
@@ -61,7 +62,7 @@
   <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch (Art. 15 bis 21 DSGVO) sowie das Recht, eine erteilte Einwilligung zu widerrufen. Da wir keine Namen oder Konten kennen, können wir Anfragen nur zuordnen, wenn Sie uns die dafür nötigen Angaben nennen. Am einfachsten löschen Sie Ihre Daten direkt in der App. Sie können sich außerdem bei einer Datenschutz-Aufsichtsbehörde beschweren, etwa beim Landesbeauftragten für den Datenschutz Sachsen-Anhalt.</p>
 
   <h2 id="en">English summary</h2>
-  <p>Schoolflow has no user accounts, no ads and no tracking. Your school credentials, timetable and grades stay on your device; the app loads them directly from your school's timetable server (stundenplan24) and, if set up, from FuxNoten. The list of features enabled for your school is a public file on GitHub Pages. If you allow notifications, our notification server stores an anonymous Apple push token together with your school number, class, selected courses, language and quiet hours, and notifies you through Apple's push service when your timetable changes. Your password is never sent to us. Turning notifications off or removing the profile deletes this registration; inactive devices are deleted after 60 days. Controller: studio.201 software GmbH, Otto-von-Guericke-Str. 104, 39104 Magdeburg, Germany, <a href="mailto:datenschutz@studio201.de">datenschutz@studio201.de</a>.</p>
+  <p>Schoolflow has no user accounts, no ads and no tracking. Your school credentials, timetable and grades stay on your device; the app loads them directly from your school's timetable server (stundenplan24) and, if set up, from FuxNoten. The list of features enabled for your school is a public file on GitHub Pages. If you allow notifications, our notification server stores an anonymous Apple push token together with your school number, class, selected courses, language and quiet hours, and notifies you through Apple's push service when your timetable changes. To detect changes the server keeps the school's latest published daily plan until the following day. Your password is never sent to us. Turning notifications off or removing the profile deletes this registration; inactive devices are deleted after 60 days. Controller: studio.201 software GmbH, Otto-von-Guericke-Str. 104, 39104 Magdeburg, Germany, <a href="mailto:datenschutz@studio201.de">datenschutz@studio201.de</a>.</p>
 
   <footer><a href="../">Schoolflow</a> · <a href="https://studio201.de/Impressum/">Impressum</a></footer>
 </main>
